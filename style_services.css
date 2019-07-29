@@ -1,0 +1,430 @@
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    height:100%;
+    width:100%; 
+    margin:0;
+    min-height: 100%;
+}
+.main {
+    width: 80%;
+    height:100%;
+    background-repeat: no-repeat; 
+    max-width: 100%;
+    height: auto;
+    margin-left:190px;
+    margin-top:0;
+}
+
+#section1 {
+    height: 600px;
+    background-image: url("deti.png");
+    opacity: 0.7;
+  }
+  #section2 {
+    height: 600px;
+    background-image: url("youth.png");
+    opacity:0.7;
+  }
+  #section3 {
+    height: 600px;
+    background-image:url("bible_group.png");
+    opacity:0.7;
+  }
+  #section4 {
+    height: 600px;
+    background-image:url("molitva.png");
+    opacity:0.8;
+  }
+  #section5 {
+    height: 600px;
+    background-image:url("church.png");
+    opacity:0.8;
+  }
+  #section6 {
+    height: 600px;
+    background-image: url("old.png");
+    opacity: 0.7;
+  }
+  #section7 {
+    height: 1000px;
+    background-image: url("volodya2.png");
+    background-position:center;
+    background-color:rgb(236, 236, 236);
+  }
+
+  #section8 {
+    height: 600px;
+    background-image: url("bible_group.jpg");
+    background-position:center;
+    background-color:rgb(236, 236, 236);
+    opacity: 0.8;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color:rgb(255, 240, 240);
+    margin: 6px;
+    transition: 0.4s;
+    z-index:1;
+    max-width: 18%;
+    max-height: 28%;
+    display: flex;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: grey;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 2;
+    color: #ffffff;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 20px;
+    color: rgb(247, 239, 239);
+    display: block;
+    transition: 0.3s;
+    z-index: 2;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    z-index: 2;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    z-index: 2;
+    color: whitesmoke;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  
+  .rectangle2 {
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 180px;
+    background: black;
+    top:0;
+    left: 0;
+    float: left;
+    max-width: 17%;
+    opacity: 0.9;
+  }
+   
+  .container {
+    cursor: pointer;
+    position: fixed;
+    top:30px;
+    right:0;
+    left:50px;
+    margin: 5px;
+    z-index:2;
+    float:right;
+  }
+
+img.cross {
+    max-width: 18%;
+    max-height: 28%;
+    position: fixed;
+    display:flex;
+    float:right;
+    top:30%;
+    right:50%;
+    left: 19px;
+    z-index: 2;
+  
+  }
+
+img.volodya {
+    margin-left: 190px;
+    z-index: 2;
+  }
+
+  h1 {
+      text-indent:300px;
+      font-family: "Literata";
+      font-size: 70px;
+      font-size:6vw;
+  }
+  h2 {
+      z-index: 2;
+      font-family: "Comfortaa";
+      font-size: 80px;
+      color: rgb(255, 242, 242);
+      line-height: 280px;
+      text-shadow: 1px 1px 4px #534f4f;
+      font-size:6vw;
+      text-align: center;
+  }
+
+   h3 {
+    text-align: center;
+    z-index: 2;
+    font-family: "Comfortaa";
+    font-size: 40px;
+    text-shadow: 1px 1px 4px #534f4f;
+    font-size:3vw;
+    color: black;
+
+  }
+  li{
+    font-size:1.3vw;
+  }
+  h4 {
+    text-align: left;
+    z-index: 2;
+    font-family: "Literata";
+    font-size: 30px;
+    font-size:3vw;
+    color: rgb(43, 40, 40);
+    margin:0;
+
+  }
+  p {
+    font-size:1.3vw;
+    font-family:"Georgia";
+  }
+
+ a {
+     color:rgb(6, 31, 49);
+     text-decoration: none;
+ }
+
+ a:hover {
+     color: rgb(235, 250, 255);
+ }
+ 
+ .parallax {
+   /* The image used */
+   background-image: url("deti2.png");
+ 
+   /* Full height */
+   height: 700px; 
+ 
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .parallax2 {
+    /* The image used */
+    background-image: url("deti_zabor.png");
+  
+    /* Full height */
+    height: 500px; 
+
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media only screen and (max-device-width: 1366px) {
+    .parallax .parallax2 {
+      background-attachment: scroll;
+    }
+}
+
+
+/* Float four columns side by side */
+.column {
+    width: 30%;
+    padding: 0 10px;
+    right:60px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+      /* margin: 0 -5px; */
+      margin-left: 190px;
+      height: auto;
+      width:auto;
+    }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+
+  /* Float four columns side by side */
+.column_ser {
+    width: 30%;
+    padding: 0 10px;
+    right:60px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row_ser {
+      /* margin: 0 -5px; */
+      margin-left: 190px;
+      height: auto;
+      width: auto;
+    }
+  
+  /* Clear floats after the columns */
+  .row_ser:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column_ser {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card_ser {
+    box-shadow: 0 4px 4px 0 rgba(128, 121, 121, 0.2);
+    padding: 16px;
+    text-align: center;
+  }
+  #map-container {
+    height: 90%;
+    width: 20%;
+    position:sticky;
+    bottom:30%;
+    cursor: pointer;
+    left:70%;
+    padding: 5px;
+    float: bottom;
+    z-index:4;
+  }
+  .text-footer {
+    top:85%;
+    left:40px;
+    z-index:4;
+    font-family:"Literata";
+    font-weight: bolder;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-left:20px;
+    margin-top:10px;
+  }
+  
+  
+  .footer {
+    background: rgb(144, 149, 153);
+    width: 85%;
+    height:inherit;
+    z-index:4;
+    margin-bottom: -50px;
+    padding: 15px;
+    left:0;
+    margin-left: 180px;
+    line-height: 1;
+  }
+
+  img.fac, img.inst {
+    max-width: 3%;
+    max-height: 3%;
+    z-index: 2;
+
+  }
+
+
+  .text_about_church {
+    margin-top: 15px;
+     margin-left: 190px;
+     margin-right: 5px;
+  }
+
+  .text_about_beliefs {
+    margin-top: 15px;
+     margin-left: 195px;
+     margin-right: 7px;
+     line-height: 1.5;
+  }
+
+  .embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; } 
+ .embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute;
+     top: 0;
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+/*FOOTER*/
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column_f {
+    float: left;
+    width: 50%;
+    padding: 0;
+  }
+  
+  /* Clear floats after the columns */
+  .row_f:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column_f {
+      width: 100%;
+    }
+  }
+  
