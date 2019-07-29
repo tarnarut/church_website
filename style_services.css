@@ -358,14 +358,12 @@ img.volodya {
   
   .footer {
     background: rgb(144, 149, 153);
-    width: 85%;
-    height:inherit;
+    width: 100%;
     z-index:4;
     margin-bottom: -50px;
     padding: 15px;
     left:0;
     margin-left: 180px;
-    line-height: 1;
   }
 
   img.fac, img.inst {
@@ -427,4 +425,6 @@ img.volodya {
       width: 100%;
     }
   }
-  
+ .donate_button {
+   margin-left: 300px;
+ }
