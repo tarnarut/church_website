@@ -168,21 +168,11 @@ img.twitter {
 }
 
 
-.footer {
-  background: rgb(255, 241, 241);
-  height: 100px;
-  width: 100%;
-  z-index:3;
-  position: fixed;
-  bottom: 0;
-  padding: 5px;
-  left:0;
-}
 
 h1 {
-  text-indent:300px;
+  text-indent:150px;
   font-family: "Literata";
-  font-size: 70px;
+  font-size: 60px;
   font-size:6vw;
 }
 h2 {
@@ -214,11 +204,13 @@ h4 {
   font-size:3vw;
   color: rgb(43, 40, 40);
   margin:0;
+  z-index:4;
 
 }
 p {
   font-size:1.3vw;
   font-family:"Georgia";
+  z-index:4;
 }
 
 a {
@@ -259,10 +251,10 @@ a:hover {
   text-align: center;
   font-size: 10px;
   cursor: pointer;
+  position:absolute;
   z-index:3;
-  position: fixed;
-  top:35%;
-  left:40%;
+  top:45%;
+  left:30%;
   height: 30px;
   width: 140px;
   max-width: 10%;
@@ -279,9 +271,9 @@ a:hover {
   font-size: 10px;
   cursor: pointer;
   z-index:3;
-  position: fixed;
-  top:35%;
-  left:60%;
+  position: absolute;
+  top:45%;
+  left:45%;
   height: 30px;
   width: 140px;
   max-width: 10%;
@@ -338,6 +330,13 @@ a:active {
   height: 400px;
 }
 
+#section4 {
+  height: 500px;
+  background-image: url("apple.png");
+  opacity: 0.6;
+  background-size: cover;
+}
+
 /* Float four columns side by side */
 .column {
   width: 30%;
@@ -377,4 +376,52 @@ a:active {
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
+}
+
+/*FOOTER*/
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column_f {
+  float: left;
+  width: 50%;
+  padding: 0;
+}
+
+/* Clear floats after the columns */
+.row_f:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column_f {
+    width: 100%;
+  }
+}
+
+.footer {
+  background: rgb(255, 241, 241);
+  height: auto;
+  width: 100%;
+  z-index:4;
+  margin-bottom:0;
+  padding: 15px;
+  left:0;
+  margin-left: 180px;
+}
+
+img.fac, img.inst {
+  max-width: 3%;
+  max-height: 3%;
+  z-index: 2;
+
+}
+
+.donate_button {
+  margin-left:500px;
 }
