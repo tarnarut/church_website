@@ -142,6 +142,12 @@ img.twitter {
   opacity:0.9;
 }
 
+@media screen and (max-width: 800px) {
+  .rectangle1 {
+    display: none;
+  }
+}
+
 
 .container {
   cursor: pointer;
@@ -210,12 +216,15 @@ h4 {
 p {
   font-size:1.3vw;
   font-family:"Georgia";
-  z-index:4;
+  z-index:3;
+  position: relative;
+  font-size:1.3vw;
 }
 
 a {
    color:rgb(6, 31, 49);
    text-decoration: none;
+   font-size:1.3vw;
 }
 
 a:hover {
@@ -335,6 +344,7 @@ a:active {
   background-image: url("apple.png");
   opacity: 0.6;
   background-size: cover;
+  position: relative;
 }
 
 /* Float four columns side by side */
@@ -424,4 +434,23 @@ img.fac, img.inst {
 
 .donate_button {
   margin-left:500px;
+}
+
+.text_donation {
+  bottom: 20px;
+  right: 20px;
+  left:20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 75%;
+}
+
+.text_title {
+  color: white;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 200px;
+  width: 75%;
+  font-size:1em;
 }
