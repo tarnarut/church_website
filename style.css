@@ -13,8 +13,8 @@ html {
 
 
 img.cross {
-  max-width: 18%;
-  max-height: 28%;
+  max-width: 15%;
+  max-height: 25%;
   position: fixed;
   display:flex;
   float:right;
@@ -24,6 +24,9 @@ img.cross {
   z-index: 2;
 
 }
+
+
+
 
 img.facebook {
   z-index: 2;
@@ -68,8 +71,8 @@ img.twitter {
   margin: 6px;
   transition: 0.4s;
   z-index:1;
-  max-width: 18%;
-  max-height: 28%;
+  max-width: 5%;
+  max-height: 2%;
   display: flex;
 }
 
@@ -128,6 +131,12 @@ img.twitter {
   left: 0;
   float: left;
   opacity: 0.9;
+}
+
+@media screen and (max-width: 800px) {
+  .rectangle2 {
+    width: 120px;
+  }
 }
 
 .rectangle1 {
@@ -204,7 +213,6 @@ color: black;
 }
 h4 {
   text-align: left;
-  z-index: 2;
   font-family: "Literata";
   font-size: 30px;
   font-size:3vw;
@@ -258,7 +266,7 @@ a:hover {
   font-size: 100%;
   border: 1px solid rgb(255, 255, 255); 
   text-align: center;
-  font-size: 10px;
+  font-size: 0.8vw;
   cursor: pointer;
   position:absolute;
   z-index:3;
@@ -277,7 +285,7 @@ a:hover {
   font-size: 100%;
   border: 1px solid rgb(255, 255, 255); 
   text-align: center;
-  font-size: 10px;
+  font-size: 0.8vw;
   cursor: pointer;
   z-index:3;
   position: absolute;
@@ -447,10 +455,11 @@ img.fac, img.inst {
 }
 
 .text_title {
-  color: white;
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 200px;
-  width: 75%;
-  font-size:1em;
+  padding-left: 100px;
+  padding-top: 120px;
+}
+
+.text_family {
+  padding-left: 300px;
+  padding-top: 270px;
 }
