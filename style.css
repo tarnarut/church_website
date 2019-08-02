@@ -1,9 +1,8 @@
 
 body,html {       
-  height:100%;
+  height:auto;
   width:100%; 
   z-index: 1;
-  font-family: "Oxygen", bold;
   margin:0;
   min-height: 100%;
 }   
@@ -11,6 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
+#wrapper {
+  max-width:1280px;
+  margin:0 auto;
+}
 
 img.cross {
   max-width: 15%;
@@ -25,13 +28,19 @@ img.cross {
 
 }
 
+@media screen and (max-width: 1024px) {
+  img.cross {
+  display: none;
+  }
+}
+
 
 
 
 img.facebook {
   z-index: 2;
   position: fixed;
-  top:30%;
+  top:40%;
   right:40px;
   max-width: 3%;
   max-height: 5%;
@@ -43,7 +52,7 @@ img.facebook {
 img.instagram {
   z-index: 2;
   position: fixed;
-  top:40%;
+  top:50%;
   right:40px;
   max-width: 3%;
   max-height: 5%;
@@ -93,7 +102,7 @@ img.twitter {
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
-  font-size: 20px;
+  font-size: 2em;
   color: rgb(247, 239, 239);
   display: block;
   transition: 0.3s;
@@ -131,13 +140,15 @@ img.twitter {
   left: 0;
   float: left;
   opacity: 0.9;
+  max-width: 13%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .rectangle2 {
-    width: 120px;
+    display: none;
   }
 }
+
 
 .rectangle1 {
   position: fixed;
@@ -151,11 +162,12 @@ img.twitter {
   opacity:0.9;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .rectangle1 {
     display: none;
   }
 }
+
 
 
 .container {
@@ -243,20 +255,18 @@ a:hover {
   color: rgb(255, 255, 255); 
   font-family: "Comfortaa";
   font-weight: bold;
-  font-size: 100%;
+  font-size: 0.6vw;
   text-align: center;
-  font-size: 10px;
   cursor: pointer;
   z-index:3;
   position: fixed;
   top:5%;
-  left:92%;
-  height: 30px;
-  width: 60px;
-  max-width: 10%;
-  max-height:5%;
+  left:93%;
+  max-width: 17%;
+  max-height:9%;
   border:none;
 }
+
 
 .button1 { 
   background:transparent;
@@ -329,16 +339,33 @@ a:active {
   background-repeat: no-repeat; 
   max-width: 100%;
   height: auto;
-  margin-left:180px;
   margin-top:0;
+  left:7%;
   position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 #section1 {
   background-image: url("bible1.png");
-  height: 100%;
-  background-size: cover;
+  width: 100%;
+  height:auto;
+  background-size: 100%;
+  max-width: 100%;
+  background-position: centre;
 }
+
+@media screen and (max-width: 800px) {
+  .section1 {
+    background-image: url("bible_ipad.png");
+  }
+}
+
 #section2 {
   height: 400px;
 }
@@ -353,6 +380,7 @@ a:active {
   opacity: 0.6;
   background-size: cover;
   position: relative;
+  background-size: 100%;
 }
 
 /* Float four columns side by side */
@@ -416,7 +444,7 @@ a:active {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .column_f {
     width: 100%;
   }
@@ -424,13 +452,17 @@ a:active {
 
 .footer {
   background: rgb(255, 241, 241);
-  height: auto;
   width: 100%;
+  height: auto;
   z-index:4;
   margin-bottom:0;
-  padding: 15px;
-  left:0;
-  margin-left: 180px;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    left:17%;
+  }
 }
 
 img.fac, img.inst {
@@ -441,25 +473,28 @@ img.fac, img.inst {
 }
 
 .donate_button {
-  margin-left:500px;
+  left:33%;
+  position: relative;
 }
 
 .text_donation {
   bottom: 20px;
-  right: 20px;
-  left:20px;
+  left:50%;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 75%;
+  width: 60%;
+  margin-left:7em;
 }
 
 .text_title {
-  padding-left: 100px;
-  padding-top: 120px;
+  left:10%;
+  padding-top: 90px;
+  position:relative;
 }
 
 .text_family {
-  padding-left: 300px;
-  padding-top: 270px;
+  position:relative;
+  padding-top: 180px;
+  padding-bottom: 30px;
+  left:30%;
+  text-align: right;
 }
