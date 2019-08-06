@@ -383,6 +383,15 @@ a:active {
   background-size: 100%;
 }
 
+#section5 {
+  height: auto;
+  background: rgb(255, 241, 241);
+  width: 100%;
+  z-index:1;
+  margin-bottom:0;
+  padding: 0;
+}
+
 /* Float four columns side by side */
 .column {
   width: 30%;
@@ -450,14 +459,6 @@ a:active {
   }
 }
 
-.footer {
-  background: rgb(255, 241, 241);
-  width: 100%;
-  height: auto;
-  z-index:4;
-  margin-bottom:0;
-  padding: 0;
-}
 
 @media screen and (max-width: 1024px) {
   .footer {
