@@ -224,6 +224,14 @@ h1 {
   font-size: 60px;
   font-size:6vw;
 }
+
+#myheader {
+  font-family: "Literata";
+  font-size: 60px;
+  font-size:6vw;
+  text-align: center;
+  text-indent: 0;
+}
 h2 {
   z-index: 2;
   font-family: "Comfortaa";
@@ -330,6 +338,19 @@ a:hover {
   max-width: 10%;
   max-height:5%;
 }
+
+@media screen and (max-width: 500px) {
+  .button1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .button2 {
+    display: none;
+  }
+}
+
 a:link {
   color: rgb(201, 86, 105);
   background-color: transparent;
@@ -355,7 +376,10 @@ a:active {
   width: 100%;
   cursor: pointer;
   z-index:4;
+  margin: 0;
+  padding: 0;
 }
+
 
 .main {
   height:100%;
@@ -380,31 +404,57 @@ a:active {
   width: 100%;
   height:auto;
   background-size: 100%;
-  max-width: 100%;
+  min-width: 100%;
   background-position: centre;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .section1 {
     background-image: url("bible_ipad.png");
   }
 }
 
+@media screen and (max-width: 480px) {
+  .section1 {
+    background-image: url("bible_iphone.png");
+    -webkit-min-device-pixel-ratio: 2;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .button1 .button2 {
+    display: none;
+  }
+}
+
+
 #section2 {
   height: 400px;
 }
 
-#section3 {
-  height: 400px;
+@media screen and (max-width: 500px) {
+  .section2 {
+  height:100px;
+  }
 }
+
+
+
+
+@media screen and (max-width: 500px) {
+  .section3 {
+  align-content: center;
+  }
+}
+
 
 #section4 {
   height: 500px;
   background-image: url("apple.png");
   opacity: 0.6;
-  background-size: cover;
   position: relative;
   background-size: 100%;
+  min-width: 100%;
 }
 
 
@@ -419,13 +469,23 @@ a:active {
 
 /* Float four columns side by side */
 .column {
-  width: 30%;
   padding: 0 10px;
   right:50%;
   left:50%;
-  margin-bottom: 20px;
   display: inline-block;
 }
+
+@media screen and (max-width: 500px) {
+  .column {
+  padding:10px;
+  display:block;
+  margin-left:10px;
+  margin-right:10px;
+  }
+}
+
+
+
 
 /* Remove extra left and right margins, due to padding */
 .row {
@@ -435,6 +495,12 @@ a:active {
     width:auto;
   }
 
+  @media screen and (max-width: 500px) {
+    .row {
+    margin-left:0;
+    }
+  }
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -442,14 +508,7 @@ a:active {
   clear: both;
 }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
+
 
 /* Style the counter cards */
 .card {
@@ -459,18 +518,25 @@ a:active {
   background-color: #f1f1f1;
 }
 
-/*FOOTER*/
-* {
-  box-sizing: border-box;
-}
+
 
 /* Create two equal columns that floats next to each other */
-.column_f {
+.column_f_1 {
   float: left;
   width: 40%;
   padding: 0;
   margin:0;
+  text-indent: 20%;
 }
+
+.column_f_2 {
+  float: left;
+  width: 40%;
+  padding: 0;
+  margin:0;
+  text-align: right;
+}
+
 .row_f {
   height: auto;
   width:auto;
@@ -484,9 +550,14 @@ a:active {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1024px) {
-  .column_f {
+  .column_f_1 {
     width: 100%;
-    text-align:centre;
+    text-align: center;
+    text-indent: 0;
+  }
+  .column_f_2 {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -526,15 +597,35 @@ img.fac, img.inst {
   z-index: 4;
 }
 
-.text_title {
+.text_title1 {
   left:10%;
   position:relative;
 }
+.text_title2 {
+  left:10%;
+  text-indent:40%;
+  font-size: 3vw;
+  position:relative;
+  font-family: 'Literata';
+}
+
+@media screen and (max-width: 500px) {
+  .text_title2 {
+  text-indent:0;
+  }
+}
 
 .text_family {
-  position:relative;
-  padding-top: 180px;
-  padding-bottom: 30px;
+  position: relative;
+  margin:0;
+  padding-top:130px;
+  padding-bottom:0;
   left:30%;
   text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+  .text_family {
+  padding:0;
+  }
 }
