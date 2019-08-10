@@ -201,6 +201,19 @@ img.twitter {
 
 }
 
+@media screen and (max-width: 500px) {
+  .container {
+    left:86%;
+  }
+  .bar1, .bar2, .bar3 {
+  width: 10px;
+  height: 3px;
+  background-color:rgb(218, 209, 209);
+  margin: 1px;
+  padding: 0;
+  }
+}
+
 
 
 .text-footer {
@@ -281,8 +294,7 @@ p {
 
 @media screen and (max-width: 500px) {
   #text_iphone {
-    font-size: 2vw;
-    
+    font-size: 2.3vw;
   }
 }
 
@@ -397,6 +409,13 @@ a:active {
   padding: 0;
 }
 
+@media screen and (max-width: 500px) {
+  #map-container {
+    height:100px;
+  }
+}
+
+
 
 .main {
   height:100%;
@@ -447,20 +466,12 @@ a:active {
 }
 
 
-#section2 {
-  height: 400px;
-}
 
 @media screen and (max-width: 500px) {
   .section2 {
   height:auto;
   }
 }
-
-#section3 {
-  height: 400px;
-}
-
 
 
 @media screen and (max-width: 500px) {
@@ -611,7 +622,6 @@ img.fac, img.inst {
   .donate_button {
     left:50%;
     right:50%;
-    margin-right: 85px;
     padding: 0;
     
   }
@@ -632,25 +642,32 @@ img.fac, img.inst {
     margin-left: 20px;
     left:0;
     padding: 0;
-    width: 50%;
+    width: 70%;
   }
 }
 
 .text_title1 {
   left:10%;
   position:relative;
+  padding-top: 90px;
 }
 .text_title2 {
   left:10%;
   text-indent:40%;
   font-size: 3vw;
   position:relative;
+  padding-top: 90px;
   font-family: 'Literata';
 }
 
 @media screen and (max-width: 500px) {
-  .text_title2 {
+  .text_title1 {
   text-indent:0;
+  padding:0;
+  }
+  .text_title2{
+    padding: 0;
+    text-indent: 0;
   }
 }
 
