@@ -271,6 +271,23 @@ p {
   font-size:1.3vw;
 }
 
+#text_iphone {
+  font-size:1.3vw;
+  font-family:"Georgia";
+  z-index:3;
+  position: relative;
+  font-size:1.3vw;
+}
+
+@media screen and (max-width: 500px) {
+  #text_iphone {
+    font-size: 2vw;
+    
+  }
+}
+
+
+
 a {
    color:rgb(6, 31, 49);
    text-decoration: none;
@@ -385,6 +402,7 @@ a:active {
   height:100%;
   width: 100%;
   background-repeat: no-repeat; 
+  background-size: contain;
   max-width: 100%;
   height: auto;
   margin:0;
@@ -402,15 +420,15 @@ a:active {
 #section1 {
   background-image: url("bible1.png");
   width: 100%;
-  height:auto;
   background-size: 100%;
-  min-width: 100%;
-  background-position: centre;
+  max-width: 100%;
+  background-position: center;
 }
 
 @media screen and (max-width: 1024px) {
   .section1 {
     background-image: url("bible_ipad.png");
+    height:592px;
   }
 }
 
@@ -434,10 +452,13 @@ a:active {
 
 @media screen and (max-width: 500px) {
   .section2 {
-  height:100px;
+  height:auto;
   }
 }
 
+#section3 {
+  height: 400px;
+}
 
 
 
@@ -449,12 +470,10 @@ a:active {
 
 
 #section4 {
-  height: 500px;
   background-image: url("apple.png");
   opacity: 0.6;
   position: relative;
-  background-size: 100%;
-  min-width: 100%;
+  background-size: cover;
 }
 
 
@@ -587,14 +606,33 @@ img.fac, img.inst {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .donate_button {
+    left:50%;
+    right:50%;
+    margin-right: 85px;
+    padding: 0;
+    
+  }
+}
+
 
 .text_donation {
   bottom: 20px;
   left:50%;
   color: white;
-  width: 60%;
+  width: 70%;
   margin-left:7em;
   z-index: 4;
+}
+
+@media screen and (max-width: 500px) {
+  .text_donation {
+    margin-left: 20px;
+    left:0;
+    padding: 0;
+    width: 50%;
+  }
 }
 
 .text_title1 {
