@@ -143,7 +143,7 @@ img.twitter {
   top:0;
   left: 0;
   float: left;
-  opacity: 0.9;
+  opacity: 1;
   max-width: 13%;
 }
 
@@ -163,7 +163,7 @@ img.twitter {
   background: linear-gradient(#F8C7C7, #2B2A2A);
   top:0;
   right:0;
-  opacity:0.9;
+  opacity:1;
 }
 
 @media screen and (max-width: 1024px) {
@@ -281,7 +281,6 @@ p {
   font-family:"Georgia";
   z-index:3;
   position: relative;
-  font-size:1.3vw;
 }
 
 #text_iphone {
@@ -318,7 +317,7 @@ a:hover {
   text-align: center;
   cursor: pointer;
   z-index:4;
-  position: relative;
+  position: fixed;
   margin-top: 20px;
   left:85%;
   padding:7px;
