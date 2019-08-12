@@ -163,6 +163,21 @@ html {
     opacity: 0.8;
   }
 
+  @media screen and (max-width: 500px) {
+    #section8 {
+     display: none;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    #section8 {
+     display: none;
+    }
+  }
+
+
+  
+
   #donate {
     height: 600px;
     background-position:center;
@@ -173,12 +188,12 @@ html {
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color:rgb(255, 240, 240);
+    background-color:whitesmoke;
     margin: 6px;
     transition: 0.4s;
     z-index:1;
-    max-width: 18%;
-    max-height: 28%;
+    max-width: 20%;
+    max-height: 10%;
     display: flex;
   }
 
@@ -200,7 +215,9 @@ html {
   
   @media screen and (max-width: 500px) {
     .container {
-      float: left;
+      top:5px;
+      left:70px;
+      padding-left:200px;
     }
     .bar1, .bar2, .bar3 {
     width: 10px;
@@ -209,6 +226,17 @@ html {
     margin: 1px;
     padding: 0;
     }
+  }
+
+  .container {
+    top:5px;
+    cursor: pointer;
+    position: fixed;
+    left: 50px;
+    margin: 5px;
+    z-index:2;
+    float:right;
+    right:0;
   }
   
   .sidenav {
@@ -275,20 +303,11 @@ html {
     }
   }
    
-  .container {
-    cursor: pointer;
-    position: fixed;
-    top:30px;
-    right:0;
-    left:50px;
-    margin: 5px;
-    z-index:2;
-    float:right;
-  }
+  
 
 img.cross {
-    max-width: 18%;
-    max-height: 28%;
+    max-width: 15%;
+    max-height: 25%;
     position: fixed;
     display:flex;
     float:right;
@@ -299,6 +318,7 @@ img.cross {
   
   }
 
+
 img.volodya {
     margin-left: 190px;
     z-index: 2;
@@ -307,16 +327,13 @@ img.volodya {
   h1 {
       text-indent:300px;
       font-family: "Literata";
-      font-size: 70px;
       font-size:6vw;
   }
   h2 {
       z-index: 2;
       font-family: "Comfortaa";
-      font-size: 80px;
       color: rgb(255, 242, 242);
       line-height: 280px;
-      text-shadow: 1px 1px 4px #534f4f;
       font-size:6vw;
       text-align: center;
   }
@@ -325,14 +342,36 @@ img.volodya {
     text-align: center;
     z-index: 2;
     font-family: "Comfortaa";
-    font-size: 40px;
-    text-shadow: 1px 1px 4px #534f4f;
     font-size:3vw;
     color: black;
 
   }
+  @media screen and (max-width: 500px) {
+    h3 {
+      font-size: 4vw;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    h3 {
+      font-size: 4vw;
+    }
+  }
+
+
   li{
     font-size:1.3vw;
+  }
+
+  @media screen and (max-width: 500px) {
+    li {
+      font-size: 2vw;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    li {
+      font-size: 2vw;
+    }
   }
   h4 {
     text-align: left;
@@ -345,7 +384,7 @@ img.volodya {
   }
   @media screen and (max-width: 500px) {
     h4 {
-      font-size: 5vw;
+      font-size: 6vw;
     }
   }
 
@@ -356,7 +395,7 @@ img.volodya {
 
   @media screen and (max-width: 500px) {
     p {
-      font-size: 2vw;
+      font-size: 3vw;
     }
   }
 
@@ -369,6 +408,14 @@ img.volodya {
  a:hover {
      color: rgb(235, 250, 255);
  }
+
+ #myheader {
+  font-family: "Literata";
+  font-size: 60px;
+  font-size:6vw;
+  text-align: center;
+  text-indent: 0;
+}
  
  .parallax {
    /* The image used */
@@ -408,19 +455,23 @@ img.volodya {
 
 /* Float four columns side by side */
 .column {
-    width: 30%;
     padding: 0 10px;
     right:60px;
-    margin-bottom: 20px;
-    display: inline-block;
+    margin-bottom: 70px;
   }
   
   /* Remove extra left and right margins, due to padding */
   .row {
       /* margin: 0 -5px; */
-      margin-left: 190px;
+      margin:90px;
       height: auto;
       width:auto;
+    }
+
+  @media screen and (max-width: 500px) {
+    .row {
+    margin:0;
+      }
     }
   
   /* Clear floats after the columns */
@@ -430,12 +481,12 @@ img.volodya {
     clear: both;
   }
   
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 500px) {
     .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
+    padding:10px;
+    display:block;
+    margin-left:10px;
+    margin-right:10px;
     }
   }
   
@@ -548,6 +599,11 @@ img.volodya {
      margin-left: 195px;
      margin-right: 7px;
      line-height: 1.5;
+  }
+  @media screen and (max-width: 1024px) {
+    .text_about_beliefs {
+      margin:15px;
+    }
   }
 
   .embed-container { 

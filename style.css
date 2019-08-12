@@ -650,14 +650,6 @@ img.fac, img.inst {
   position:relative;
   padding-top: 90px;
 }
-.text_title2 {
-  left:10%;
-  text-indent:40%;
-  font-size: 3vw;
-  position:relative;
-  padding-top: 140px;
-  font-family: 'Literata';
-}
 
 @media screen and (max-width: 500px) {
   .text_title1 {
