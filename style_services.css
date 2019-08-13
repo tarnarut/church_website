@@ -142,17 +142,19 @@ html {
     background-color:rgb(236, 236, 236);
   }
 
-  @media screen and (max-width: 1024px) {
-    .section7 {
-     height:500px;
-    }
-  }
 
   @media screen and (max-width: 500px) {
     #section7 {
      display: none;
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    #section7 {
+     display: none;
+    }
+  }
+
 
 
   #section8 {
@@ -199,9 +201,9 @@ html {
 
   @media screen and (max-width: 1024px) {
     .container {
-      top:10%;
-      margin:0;
-      left:85%;
+      top:5px;
+      left:150px;
+      padding-left: 600px;
     }
     .bar1, .bar2, .bar3 {
     width: 30px;
@@ -368,11 +370,14 @@ img.volodya {
     }
   }
 
+
   @media screen and (max-width: 1024px) {
     li {
-      font-size: 2vw;
+      font-size: 2.5vw;
     }
   }
+
+
   h4 {
     text-align: left;
     z-index: 2;
@@ -388,12 +393,24 @@ img.volodya {
     }
   }
 
+  @media screen and (max-width: 1024px) {
+    h4 {
+      font-size: 4vw;
+    }
+  }
+
   p {
     font-size:1.3vw;
     font-family:"Georgia";
   }
 
   @media screen and (max-width: 500px) {
+    p {
+      font-size: 3vw;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
     p {
       font-size: 3vw;
     }
@@ -590,6 +607,7 @@ img.volodya {
   @media screen and (max-width: 1024px) {
     .text_about_church {
       margin:15px;
+      margin-top:40px;
     }
   }
 
@@ -603,6 +621,7 @@ img.volodya {
   @media screen and (max-width: 1024px) {
     .text_about_beliefs {
       margin:15px;
+      margin-left:20px;
     }
   }
 
