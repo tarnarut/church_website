@@ -110,30 +110,113 @@ html {
     background-image: url("deti.png");
     opacity: 0.7;
   }
+@media screen and (max-width: 1024px) {
+    #section1 {
+     height:300px;
+     background-size: 100%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #section1 {
+     height:200px;
+     background-size: 100%;
+    }
+  }
+
   #section2 {
     height: 600px;
     background-image: url("youth.png");
     opacity:0.7;
+  }
+
+  @media screen and (max-width: 1024px) {
+    #section2 {
+     height:300px;
+     background-size: 100%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #section2 {
+     height:200px;
+     background-size: 100%;
+    }
   }
   #section3 {
     height: 600px;
     background-image:url("bible_group.png");
     opacity:0.7;
   }
+
+  @media screen and (max-width: 1024px) {
+    #section3 {
+     height:300px;
+     background-size: 100%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #section3 {
+     height:200px;
+     background-size: 100%;
+    }
+  }
+
   #section4 {
     height: 600px;
     background-image:url("molitva.png");
     opacity:0.8;
+  }
+
+  @media screen and (max-width: 1024px) {
+    #section4 {
+     height:300px;
+     background-size: 100%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #section4 {
+     height:200px;
+     background-size: 100%;
+    }
   }
   #section5 {
     height: 600px;
     background-image:url("church.png");
     opacity:0.8;
   }
+  @media screen and (max-width: 1024px) {
+    #section5 {
+     height:300px;
+     background-size: 100%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #section5 {
+     height:200px;
+     background-size: 100%;
+    }
+  }
   #section6 {
     height: 600px;
     background-image: url("old.png");
     opacity: 0.7;
+  }
+  @media screen and (max-width: 1024px) {
+    #section6 {
+     height:300px;
+     background-size: 100%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #section6 {
+     height:200px;
+     background-size: 100%;
+    }
   }
   #section7 {
     height: 1000px;
@@ -331,6 +414,13 @@ img.volodya {
       font-family: "Literata";
       font-size:6vw;
   }
+  @media screen and (max-width: 500px) {
+    h1 {
+      text-indent: 0;
+      text-align: center;
+    }
+  }
+
   h2 {
       z-index: 2;
       font-family: "Comfortaa";
@@ -338,6 +428,17 @@ img.volodya {
       line-height: 280px;
       font-size:6vw;
       text-align: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    h2 {
+      line-height: 5px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    h2 {
+      line-height: 70px;
+    }
   }
 
    h3 {
