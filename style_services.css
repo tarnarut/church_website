@@ -632,6 +632,13 @@ img.volodya {
     margin-bottom: 20px;
     display: inline-block;
   }
+
+  @media screen and (max-width: 1024px) {
+    .column_ser {
+      right: 0;
+    }
+  }
+
   
   /* Remove extra left and right margins, due to padding */
   .row_ser {
@@ -640,6 +647,19 @@ img.volodya {
       height: auto;
       width: auto;
     }
+    @media screen and (max-width: 500px) {
+      .row_ser {
+        margin: 0;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      .row_ser {
+        margin-left: 0;
+      }
+    }
+
+  
   
   /* Clear floats after the columns */
   .row_ser:after {
@@ -649,7 +669,7 @@ img.volodya {
   }
   
   /* Responsive columns */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 500px) {
     .column_ser {
       width: 100%;
       display: block;
