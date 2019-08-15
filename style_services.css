@@ -524,6 +524,22 @@ img.volodya {
     }
   }
 
+   .p1 {
+    font-size:1.1vw;
+    font-family:"Georgia";
+   }
+
+   @media screen and (max-width: 500px) {
+    .p1 {
+      font-size: 3vw;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .p1 {
+      font-size: 3vw;
+    }
+  }
 
  a {
      color:rgb(6, 31, 49);
@@ -623,13 +639,16 @@ img.volodya {
     background-color: #f1f1f1;
   }
 
+  * {
+    box-sizing: border-box;
+  }
 
   /* Float four columns side by side */
 .column_ser {
     width: 30%;
     padding: 0 10px;
     right:60px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     display: inline-block;
   }
 
@@ -644,8 +663,9 @@ img.volodya {
   .row_ser {
       /* margin: 0 -5px; */
       margin-left: 190px;
-      height: auto;
-      width: auto;
+      height: 100%;
+      width: 100%;
+      margin-right:10px;
     }
     @media screen and (max-width: 500px) {
       .row_ser {
@@ -655,7 +675,7 @@ img.volodya {
 
     @media screen and (max-width: 1024px) {
       .row_ser {
-        margin-left: 0;
+        margin-left:10px;
       }
     }
 
