@@ -550,6 +550,7 @@ a:active {
   text-align: center;
   background-image:url("greenfon.png");
   opacity: 0.8;
+  background-size: 100%;
 }
 .card2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -557,6 +558,7 @@ a:active {
   text-align: center;
   background-image:url("rasp.png");
   opacity: 0.8;
+  background-size: 100%;
 }
 
 
