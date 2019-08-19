@@ -87,6 +87,7 @@ img.twitter {
   max-width: 20%;
   max-height: 10%;
   display: flex;
+  border-radius: 1px 4px;
 }
 
 .sidenav {
