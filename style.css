@@ -496,13 +496,16 @@ a:active {
   padding: 0;
   box-sizing: border-box;
 }
+* {
+  box-sizing: border-box;
+}
 
 /* Float four columns side by side */
 .column {
-  padding: 0 10px;
-  right:50%;
-  left:50%;
+  padding: 25px;
   display: inline-block;
+  width:44%;
+  height: auto;
 }
 
 @media screen and (max-width: 500px) {
@@ -520,7 +523,7 @@ a:active {
 /* Remove extra left and right margins, due to padding */
 .row {
     /* margin: 0 -5px; */
-    margin-left: 190px;
+    margin-left: 30px;
     height: auto;
     width:auto;
   }
@@ -541,11 +544,19 @@ a:active {
 
 
 /* Style the counter cards */
-.card {
+.card1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-image:url("greenfon.png");
+  opacity: 0.8;
+}
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-image:url("rasp.png");
+  opacity: 0.8;
 }
 
 
