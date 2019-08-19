@@ -7,8 +7,10 @@
 <link rel="stylesheet" href="css/bootstrap.min.css" >
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-<title>Пожертвования | Церковь Живое Слово</title>
+<title>Служения | Церковь Живое Слово</title>
 <link rel="stylesheet" href="style_services.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- optional, prevents the submit button from being pressed more than once -->
     <script>
@@ -27,7 +29,8 @@
        document.getElementById("mySidenav").style.width = "0";
        document.getElementById("main").style.marginLeft = "0";
      }
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     </script>
+     
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -70,57 +73,41 @@ $(document).ready(function(){
      <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
 
-     <!-- optional, prevents the submit button from being pressed more than once -->
-    <script>
-        function myFunction(x) {
-       x.classList.toggle("change");
-     }
-     
-     /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-     function openNav() {
-       document.getElementById("mySidenav").style.width = "250px";
-       document.getElementById("main").style.marginLeft = "250px";
-     }
-     
-     /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-     function closeNav() {
-       document.getElementById("mySidenav").style.width = "0";
-       document.getElementById("main").style.marginLeft = "0";
-     }
-     </script> 
 
 </head>
 <body>
-
+<div id="wrapper">
+    <span onclick="openNav()">  <div class="container" onclick="myFunction(this)"> 
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        </div> </span> 
         <!--SIDE NAVIGATION-->
 <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" style="color: rgb(255, 240, 240);font-family: Comfortaa;font-size:17px">Главная</a>
      <a href="about_church.html" style="color: rgb(255, 240, 240);font-family: Comfortaa;font-size:17px">О церкви</a>
-        <a href="beliefs.html" style="color: rgb(255, 240, 240);font-family: Comfortaa;font-size:17px">Во что мы верим</a>
+        <a href="#" style="color: rgb(255, 240, 240);font-family: Comfortaa;font-size:17px">Во что мы верим</a>
         <a href="events.html" style="color: rgb(255, 240, 240);font-family: Comfortaa;font-size:17px">События</a>
         <a href="services.html" style="color: rgb(255, 240, 240);font-family: Comfortaa;font-size:17px">Служения</a>
         <a href="#" style="color: rgb(255, 240, 240);font-family: Comfortaa;font-size:17px">Фото</a>
-        <a href="sermons.html" style="color: rgb(255, 240, 240);font-family: Comfortaa;font-size:17px">Проповеди</a>
-        <a href="donation.html" style="color: rgb(255, 240, 240);font-family: Comfortaa;font-size:17px">Пожертвовать</a>
+        <a href="#" style="color: rgb(255, 240, 240);font-family: Comfortaa;font-size:17px">Проповеди</a>
+        <a href="#" style="color: rgb(255, 240, 240);font-family: Comfortaa;font-size:17px">Пожертвовать</a>
 
 </div>
 <!-- Use any element to open the sidenav -->
 
-<div class="rectangle2"> <span onclick="openNav()">  <div class="container" onclick="myFunction(this)"> 
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-    </div> </span>
+<div class="rectangle2"> 
     <a href="index.html">
     <img src="logo_cross.png" class="cross">
     </a>
 </div>
 <div class="main" id="donate">
-    <h3>Пожертвование</h3>
+    <h1 style="text-indent: 0;text-align: center">Пожертвование</h1>
 
-<p style="margin-left:190px;font-size: 20px">Если Бог расположил ваше сердце пожертвовать на Его дело, вы можете сделать целевое добровольное пожертвование. Все средства идут на распространение влияния Божьего Слова в Канаде и по всему миру. </p>
+<p>Если Бог расположил ваше сердце пожертвовать на Его дело, вы можете сделать целевое добровольное пожертвование. Все средства идут на распространение влияния Божьего Слова в Канаде и по всему миру. </p>
 <br>
-<p style="margin-left:190px;text-align: center">Каждый уделяй по расположению сердца, не с огорчением и не с принуждением; ибо доброхотно дающего любит Бог.
+<p>Каждый уделяй по расположению сердца, не с огорчением и не с принуждением; ибо доброхотно дающего любит Бог.
 (Второе послание к Коринфянам 9:7)</p>
 
 <div class="donate_button">
@@ -136,28 +123,29 @@ $(document).ready(function(){
 </div>
 
 <br>
-<div class="footer">
-<div class="row_f">
-  <div class="column_f">
-    <p style="margin:8px;margin-left:100px"><a href="about_church.html">О Церкви</a></p>
-    <p style="margin:8px;margin-left:100px"><a href="beliefs.html">Во что мы верим</a></p>
-    <p style="margin:8px;margin-left:100px"><a href="services.html">Служения</a></p>
-    <p style="margin:8px;margin-left:100px"><a href="events.html">События</a></p>
-    <p style="margin:8px;margin-left:100px"><a href="sermons.html">Проповеди</a></p>
-    <p style="margin:8px;margin-left:100px"><a href="donation.html">Пожертвовать</a></p>
+<div class="main_in" id="section5_in">
+  <div class="row_f">
+    <div class="column_f_1">
+        <p><a href="index.html">Главная</a></p>
+      <p><a href="about_church.html">О Церкви</a></p>
+      <p><a href="beliefs.html">Во что мы верим</a></p>
+      <p><a href="services.html">Служения</a></p>
+      <p><a href="events.html">События</a></p>
+      <p><a href="sermons.html">Проповеди</a></p>
+      <p><a href="donation.html">Пожертвовать</a></p>
+    </div>
+    <div class="column_f_2">
+      <p>Богослужение каждое воскресенье в 14.00</p>
+      <p><a href="http://www.southcalgary2.org/" target="_blank">South Calgary Community Church</a></p>
+      <p>Адрес: 2900 Cedarbrae Drive SW, Calgary, AB • T2W 3S9 </p>
+      <p><a href = "mailto:abc@example.com?subject = Feedback&body = Message">russianchurch@google.com</a> &ensp; (403) 281-6755</p>
+      <p>Мы в социальных сетях &ensp; &ensp; <img src="fac.png" class="fac"> &ensp; <img src="inst.png" class="inst"></p>
+    </div>
   </div>
-  <div class="column_f">
-    <p style="margin:8px">Богослужение каждое воскресенье в 14.00</p>
-    <p style="margin:8px"><a href="http://www.southcalgary2.org/" target="_blank">South Calgary Community Church</a></p>
-    <p style="margin:8px">Адрес: 2900 Cedarbrae Drive SW, Calgary, AB • T2W 3S9 </p>
-    <p style="margin:8px"><a href = "mailto:abc@example.com?subject = Feedback&body = Message">russianchurch@google.com</a> &ensp; (403) 281-6755</p>
-    <p style="margin:8px">Мы в социальных сетях &ensp; &ensp; <img src="fac.png" class="fac"> &ensp; <img src="inst.png" class="inst"></p>
   </div>
+
 </div>
-</div>   
-
-
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-</html>
+</html> 
