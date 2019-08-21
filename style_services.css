@@ -550,6 +550,23 @@ img.volodya {
      color: rgb(235, 250, 255);
  }
 
+ @media screen and (max-width: 1024px) {
+  .a {
+    font-size: 3vw;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .a {
+    font-size: 3vw;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+  }
+}
+
+
  #myheader {
   font-family: "Literata";
   font-size: 60px;
