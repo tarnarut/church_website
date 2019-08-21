@@ -115,8 +115,7 @@ img.twitter {
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
-  z-index: 4;
+  color: whitesmoke;
 }
 
 .sidenav .closebtn {
@@ -298,17 +297,12 @@ p {
   }
 }
 
-
-
 a {
    color:rgb(6, 31, 49);
    text-decoration: none;
    font-size:1.3vw;
 }
 
-a:hover {
-   color: rgb(235, 250, 255);
-}
 .eng {
   background:rgb(114, 4, 19);
   color: rgb(255, 255, 255); 
