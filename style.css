@@ -434,22 +434,23 @@ a:active {
   background-image: url("bible1.png");
   background-size: 100% 100%;
   width: 100%;
-  height: 100%;
+  height: 820px;
   max-width: 100%;
   background-position: center;
 }
 
 @media screen and (max-width: 1024px) {
-  .section1 {
+  #section1 {
     background-image: url("bible_ipad.png");
-    height:592px;
+    height:100%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .section1 {
+  #section1 {
     background-image: url("bible_iphone.png");
-    -webkit-min-device-pixel-ratio: 2;
+    -webkit-min-device-pixel-ratio: 1;
+    height:100%;
   }
 }
 
@@ -507,7 +508,7 @@ a:active {
   .column {
   padding:10px;
   display:block;
-  margin-left:10px;
+  margin-left:100px;
   margin-right:10px;
   }
 }
