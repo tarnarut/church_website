@@ -260,9 +260,6 @@ html {
     }
   }
 
-
-  
-
   #donate {
     height: 600px;
     background-position:center;
@@ -547,7 +544,7 @@ img.volodya {
  }
 
  a:hover {
-     color: rgb(235, 250, 255);
+     color: rgb(161, 176, 180);
  }
 
  @media screen and (max-width: 1024px) {

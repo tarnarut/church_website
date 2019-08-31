@@ -56,6 +56,17 @@
               });
             });
      </script>
+
+     <script>
+     
+     $(document).click(function(event) {
+  if (!$(event.target).closest('#mySidenav').length) {
+    if ($('#mySidenav').is(":visible")) {
+      document.getElementById("mySidenav").style.width = "0px";
+    }
+  }
+})
+      </script>
      
      <link href='https://fonts.googleapis.com/css?family=Baloo Tamma' rel='stylesheet'>
      <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
