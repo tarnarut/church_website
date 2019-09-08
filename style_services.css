@@ -13,7 +13,7 @@ html {
 }
 
 #wrapper {
-  max-width:1280px;
+  max-width:1980px;
   margin:0 auto;
 }
 
@@ -45,7 +45,9 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-
+* {
+  box-sizing: border-box;
+}
 /* Create two equal columns that floats next to each other */
 .column_f_1 {
   float: left;
@@ -375,7 +377,7 @@ html {
     top:0;
     left: 0;
     float: left;
-    max-width: 17%;
+    max-width: 13%;
     opacity: 0.9;
   }
 
@@ -395,9 +397,15 @@ img.cross {
     float:right;
     top:30%;
     right:50%;
-    left: 19px;
+    left: 20px;
     z-index: 2;
   
+  }
+
+  @media screen and (max-width: 3020px) {
+    img.cross {
+    max-width: 8%;
+    }
   }
 
 

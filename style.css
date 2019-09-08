@@ -14,7 +14,7 @@ html {
 }
 
 #wrapper {
-  max-width:1280px;
+  max-width:1980px;
   margin:0 auto;
 }
 
@@ -27,10 +27,17 @@ img.cross {
   float:right;
   top:30%;
   right:50%;
-  left: 19px;
+  left: 20px;
   z-index: 2;
 
 }
+
+@media screen and (max-width: 3020px) {
+  img.cross {
+  max-width: 8%;
+  }
+}
+
 
 @media screen and (max-width: 1024px) {
   img.cross {
